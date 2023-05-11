@@ -1,0 +1,182 @@
+:root{
+    --white: #fff;
+    --navy: rgb(0, 0, 243);
+    --off-white: rgb(255, 239, 220);
+    --black: black;
+    --gray: rgba(128, 128, 128, 0.26);
+    --light-blue: rgb(33, 199, 255);
+    --aqua: rgb(173, 193, 231);
+    --header-fonts: Verdana, Georgia, sans-serif;
+    --bodyfonts: Georgia, Helvetica, serif;   
+}
+
+header h1{
+    background-color:var(--light-blue);
+    font-family: var(--header-fonts);
+    font-size: 200%;
+    color: var(--white);
+    padding: 1% 1% .5% 1%;
+    width:100%;
+}
+
+header h2{
+    background-color:var(--light-blue);
+    font-family: var(--header-fonts);
+    font-size: 100%;
+    color: var(--white);
+   padding-left: 3%;
+   padding-bottom: .5%;
+   width:100%;
+}
+
+nav{
+    background-color: var(--off-white);
+    color:var(--aqua);
+    padding: 0.5% 0% .5% 0%;
+    border-style: solid;
+    border-width: .1%;
+    width:100%;
+}
+
+nav ul{
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 3%;
+}
+
+ul li a{
+    color: black;
+    text-decoration: none;
+      
+}
+ul li a:hover{
+    background-color: var(--white);
+}
+
+.coverimage{
+    height:600px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section{
+    font-family: var(--bodyfonts);
+    padding: .1% 0% .5% 0%;
+    display: flex;
+    border-width: 1px;
+    border-style:dashed;
+    background-color: var(--white);
+    justify-content: space-between;
+}
+
+section h2{
+    font-family: var(--header-fonts);
+    font-size: 200%;
+    display: inline-block;
+    overflow:visible;
+    white-space: nowrap;
+    padding-left: 2%;
+    
+}
+
+section ul{
+    display: contents; 
+}
+
+main{
+    width: 90%;
+    margin:auto;
+}
+
+.headshot{
+    width: 200px;
+    margin-top: .5%;
+    border-radius: 30px;
+    transition: all 0.5s ease-in-out;
+    
+}
+.headshot:hover{
+        box-shadow: inset 0px 0px 8px var(--navy), 0 0 15px var(--navy);
+}
+
+.bio{
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px var(--gray);
+    background-color: var(--off-white);
+    padding: 1%;
+    display: flex;
+    flex: 0 1 800px;
+}
+
+.workcard{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 75px;
+    justify-content: space-evenly;
+    background-color: var(--white);
+    border-style: solid;
+    border-color: var(--aqua);
+    height: 250px;
+    width: 350px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px var(--gray);
+    transition: all 0.5s ease-in-out;
+    position:relative;
+    background-size: cover;
+    padding: 4%;
+}
+.workcard-top{
+    position: absolute;
+    right: 60%;
+    top: 10%;
+    left: 5%;
+    width: auto;
+    font-weight: 400;
+    color: var(--aqua);
+    background-color: var(--off-white);
+    font-size: 30px;
+    border: dashed;
+}
+
+.workcard:hover{
+        box-shadow: inset 0px 0px 8px var(--navy), 0 0 15px var(--navy);
+        cursor: pointer;
+}
+
+.workcard-top h3{
+    color: var(--light-blue);
+}
+#contents{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-items: space-between;
+    gap: 5px;
+    margin-right: 0;
+}
+
+#contact ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    min-width: 300px;
+    margin-top: .5%;
+}
+
+#contact ul li a:hover{
+    background-color: var(--off-white);
+}
+footer{
+    text-align: center;
+    font-size: 90%;
+    font-weight: 700;
+}
