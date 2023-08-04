@@ -1,154 +1,165 @@
-:root{
-    --dark-blue:#0B3C5D;
-    --sky-blue:#328CC1;
-    --gold:#D9B310;
-    --black:#1D2731;
-    --white: #D9D9D9;
-    --fonts: 'Open Sans', sans-serif;
-}
-h1, h2, h3, h4, h5, h6, p {
-    color: var(--white);
-  }
-
-nav{
-    height: auto;
-    margin-bottom:.1%;
+/* Root element of CSS file */
+:root {
+  --dark-blue: #0b3c5d;
+  --sky-blue: #328cc1;
+  --gold: #d9b310;
+  --black: #1d2731;
+  --white: #d9d9d9;
+  --fonts: "Open Sans", sans-serif;
 }
 
-ul li a{
-    color: var(--white);
-    text-decoration: none;
-      
+/* Header Font Color */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--white);
 }
 
-.coverimage{
-    height:550px;
-    width: 90%;
-    position: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+nav {
+  height: auto;
+  margin-bottom: 0.1%;
 }
 
-main{
-    width: 90%;
-    margin:auto;
+ul li a {
+  color: var(--white);
+  text-decoration: none;
 }
 
-section{
-    font-family: var(--fonts);
-    padding: .1% 0% .5% 0%;
-    margin:auto;
-    display: flex;
-    border-width: 1px;
-    border-style:dashed;
-    background-color: skyblue;
-    justify-content: space-between;
+.coverimage {
+  height: 550px;
+  width: 90%;
+  position: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-section h3{
-    font-family: var(--fonts);
-    font-size: 200%;
-    display: inline-block;
-    overflow:visible;
-    white-space: nowrap;
-    padding-left: 2%;
-    
-}
-#aboutme{
-    display:flex;
-    justify-content: space-evenly;
-    margin:auto;
-}
-#headshot{
-    width: 200px;
-    margin-top: .5%;
-    border-radius: 30px;
-    transition: all 0.5s ease-in-out;
-    
-}
-#headshot:hover{
-    box-shadow: inset 0px 0px 8px var(--gold), 0 0 15px var(--gold);
+/* Styling for the main part of the body (does not include the hero image, header and footer) */
+main {
+  width: 90%;
+  margin: auto;
 }
 
-#bio{
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 30px;
-    box-shadow: 10px 10px 5px var(--black);
-    background-color: var(--dark-blue);
-    padding: 1%;
-    flex: 0 1 1000px;
-}
-#hero-card-container{
-    width: 40rem;
-    height: 20rem;
-    margin-bottom: 1%;
-}
-#hero-card-img{
-    width: 40rem;
-    height: 20rem;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 1%;
-}
-.card-container{
-    display: flex;
-    flex-wrap:wrap;
-
-}
-.card{
-    width: 20rem;
-    height: 10rem;
-    margin: auto;
+/* Styling for About Me, Contact and Work Section */
+section {
+  font-family: var(--fonts);
+  padding: 0.1% 0% 0.5% 0%;
+  margin: auto;
+  display: flex;
+  border-width: 1px;
+  border-style: dashed;
+  background-color: skyblue;
+  justify-content: space-between;
 }
 
-.card-img-top{
-    width: 20em;
-    height: 10rem;
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 1%;
-}
-.card-title{
-    background-color: var(--sky-blue);
-    display: inline-block;
-    color: var(--white);
-    text-decoration: none;
+section h3 {
+  font-family: var(--fonts);
+  font-size: 200%;
+  display: inline-block;
+  overflow: visible;
+  white-space: nowrap;
+  padding-left: 2%;
 }
 
-footer{
-    text-align: center;
-    font-size: 90%;
-    font-weight: 700;
+/* About Me Section */
+#aboutme {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+}
+#headshot {
+  width: 200px;
+  margin-top: 0.5%;
+  border-radius: 30px;
+  transition: all 0.5s ease-in-out;
+}
+#headshot:hover {
+  box-shadow: inset 0px 0px 8px var(--gold), 0 0 15px var(--gold);
 }
 
+#bio {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 30px;
+  box-shadow: 10px 10px 5px var(--black);
+  background-color: var(--dark-blue);
+  padding: 1%;
+  flex: 0 1 1000px;
+}
+
+/* Work Section */
+#hero-card-container {
+  width: 40rem;
+  height: 20rem;
+  margin-bottom: 1%;
+}
+#hero-card-img {
+  width: 40rem;
+  height: 20rem;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 1%;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  width: 20rem;
+  height: 10rem;
+  margin: auto;
+}
+
+.card-img-top {
+  width: 20em;
+  height: 10rem;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 1%;
+}
+.card-title {
+  background-color: var(--sky-blue);
+  display: inline-block;
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 90%;
+  font-weight: 700;
+}
+
+/* CSS Styling Changes when the screen size changes */
 @media screen and (max-width: 992px) {
-    #aboutme{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    #bio{
+  #aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #bio {
     flex: 0 1;
-    }
-
   }
-  @media screen and (max-width: 768px) {
-    #hero-card-container{
-        width: 30rem;
-        height: 15rem;
-    }
-    #hero-card-img{
-        width: 30rem;
-        height: 15rem;
-    }
+}
+@media screen and (max-width: 768px) {
+  #hero-card-container {
+    width: 30rem;
+    height: 15rem;
   }
+  #hero-card-img {
+    width: 30rem;
+    height: 15rem;
+  }
+}
 
 @media screen and (max-width: 576px) {
-    nav{
-        display: flex;
-        flex-direction: column;
-    }
-
+  nav {
+    display: flex;
+    flex-direction: column;
   }
+}
